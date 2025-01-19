@@ -8,6 +8,11 @@ export class CategoriesController {
           @Param('categoriesId') categoriesId: string,
           @Param('productsId') productsId: string,
       ) {
-        return `El id del producto es: ${productsId} y la categoria es ${categoriesId}`;
+        return {
+            message:'se obtuvo las categorias',
+            categorieId:`${categoriesId}`,
+            productId:`${productsId}`
+        }
+        
       }
 }
